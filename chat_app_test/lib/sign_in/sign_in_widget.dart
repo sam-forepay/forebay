@@ -7,7 +7,7 @@ import '../flutter_flow/flutter_flow_widgets.dart';
 import '../sign_in_verify/sign_in_verify_widget.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+//import 'package:google_fonts/google_fonts.dart';
 
 class SignInWidget extends StatefulWidget {
   const SignInWidget({Key? key}) : super(key: key);
