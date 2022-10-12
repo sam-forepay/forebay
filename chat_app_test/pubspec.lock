@@ -847,6 +847,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "6.3.1"
+  logger:
+    dependency: "direct main"
+    description:
+      name: logger
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.0"
   logging:
     dependency: transitive
     description:
@@ -1351,6 +1358,8 @@ packages:
     version: "5.0.1"
   stream_chat_flutter_core:
     dependency: transitive
+  stream_chat_flutter_core:
+    dependency: "direct main"
     description:
       name: stream_chat_flutter_core
       url: "https://pub.dartlang.org"

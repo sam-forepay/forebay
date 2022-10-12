@@ -1,7 +1,13 @@
 //import 'package:flutter/gestures.dart';
+import 'dart:html';
+
+import 'package:chat_a_p_p_test/app.dart';
+import 'package:flutter/gestures.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:stream_chat_flutter_core/stream_chat_flutter_core.dart';
 import 'auth/firebase_user_provider.dart';
 import 'auth/auth_util.dart';
 
@@ -11,6 +17,7 @@ import 'flutter_flow/internationalization.dart';
 import 'index.dart';
 
 void main() async {
+  final client = StreamChatClient(streamKey);
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
 

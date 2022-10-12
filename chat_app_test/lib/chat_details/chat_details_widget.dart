@@ -210,7 +210,7 @@ class _ChatDetailsWidgetState extends State<ChatDetailsWidget>
                                             visible: chatDetailsChatsRecord!
                                                         .chatIcon !=
                                                     null &&
-                                                chatDetailsChatsRecord!
+                                                chatDetailsChatsRecord
                                                         .chatIcon !=
                                                     '',
                                             child: Padding(
@@ -278,7 +278,7 @@ class _ChatDetailsWidgetState extends State<ChatDetailsWidget>
                                                       createChatsRecordData(
                                                     chatIcon: uploadedFileUrl,
                                                   );
-                                                  await chatDetailsChatsRecord!
+                                                  await chatDetailsChatsRecord
                                                       .reference
                                                       .update(chatsUpdateData);
                                                 },
@@ -343,7 +343,7 @@ class _ChatDetailsWidgetState extends State<ChatDetailsWidget>
                                                 groupName:
                                                     chatNameController!.text,
                                               );
-                                              await chatDetailsChatsRecord!
+                                              await chatDetailsChatsRecord
                                                   .reference
                                                   .update(chatsUpdateData);
                                             },
@@ -357,7 +357,7 @@ class _ChatDetailsWidgetState extends State<ChatDetailsWidget>
                                                       fontFamily: 'Montserrat',
                                                       lineHeight: 2,
                                                     ),
-                                            hintText: chatDetailsChatsRecord!
+                                            hintText: chatDetailsChatsRecord
                                                 .groupName,
                                             hintStyle:
                                                 FlutterFlowTheme.of(context)
@@ -469,8 +469,8 @@ class _ChatDetailsWidgetState extends State<ChatDetailsWidget>
                                             groupChat = await FFChatManager
                                                 .instance
                                                 .addGroupMembers(
-                                              chatDetailsChatsRecord!,
-                                              chatDetailsChatsRecord!.users!
+                                              chatDetailsChatsRecord,
+                                              chatDetailsChatsRecord.users!
                                                   .toList(),
                                             );
 
@@ -816,7 +816,7 @@ class _ChatDetailsWidgetState extends State<ChatDetailsWidget>
                                                 leaveChat = await FFChatManager
                                                     .instance
                                                     .removeGroupMembers(
-                                                  chatDetailsChatsRecord!,
+                                                  chatDetailsChatsRecord,
                                                   [currentUserReference!],
                                                 );
 

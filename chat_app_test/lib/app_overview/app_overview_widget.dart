@@ -22,7 +22,7 @@ class AppOverviewWidget extends StatefulWidget {
 
 class _AppOverviewWidgetState extends State<AppOverviewWidget> {
   bool isMediaUploading = false;
-  String uploadedFileUrl = '';
+  String uploadedFileUrl = ''; 
 
   TextEditingController? displayNameController;
   PageController? pageViewController;
