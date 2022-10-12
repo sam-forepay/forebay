@@ -79,6 +79,7 @@ class _AddExpenseWidgetState extends State<AddExpenseWidget> {
         }
         List<ChatsRecord> addExpenseChatsRecordList = snapshot.data!;
         return Scaffold(
+          resizeToAvoidBottomInset: false,
           key: scaffoldKey,
           body: GestureDetector(
             onTap: () => FocusScope.of(context).unfocus(),
